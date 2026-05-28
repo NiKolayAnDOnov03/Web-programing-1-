@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/week-3-spring-mvc-rest-api.iml" filepath="$PROJECT_DIR$/.idea/week-3-spring-mvc-rest-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/week-4-sql-jdbc-spring-data.iml" filepath="$PROJECT_DIR$/.idea/week-4-sql-jdbc-spring-data.iml" />
     </modules>
   </component>
 </project>
