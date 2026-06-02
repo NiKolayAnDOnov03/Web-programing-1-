@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="effbb2e9-18d3-446f-8de7-9dc2a3802de2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../week-2-spring-framework/project/webprogramming/src/main/java/pu/fmi/webprogramming/service/DeliveryEstimator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week-2-spring-framework/project/webprogramming/src/main/java/pu/fmi/webprogramming/service/DeliveryEstimator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week-2-spring-framework/project/webprogramming/src/main/java/pu/fmi/webprogramming/service/DeliveryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week-2-spring-framework/project/webprogramming/src/main/java/pu/fmi/webprogramming/service/DeliveryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week-3-spring-mvc-rest-api/project/webprogramming/src/main/java/pu/fmi/webprogramming/contoller/rest/DeliveryApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week-3-spring-mvc-rest-api/project/webprogramming/src/main/java/pu/fmi/webprogramming/contoller/rest/DeliveryApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week-3-spring-mvc-rest-api/project/webprogramming/src/main/java/pu/fmi/webprogramming/service/DeliveryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week-3-spring-mvc-rest-api/project/webprogramming/src/main/java/pu/fmi/webprogramming/service/DeliveryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/webprogramming/db/delivery_system_db.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/project/webprogramming/db/delivery_system_db.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/webprogramming/db/delivery_system_db.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/project/webprogramming/db/delivery_system_db.trace.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/webprogramming/src/main/java/pu/fmi/webprogramming/repository/DeliveryJpaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/webprogramming/src/main/java/pu/fmi/webprogramming/repository/DeliveryJpaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/webprogramming/src/main/java/pu/fmi/webprogramming/service/DeliveryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/webprogramming/src/main/java/pu/fmi/webprogramming/service/DeliveryService.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="3Eb65umyX2rMEIItWTEIYSjkJGG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="effbb2e9-18d3-446f-8de7-9dc2a3802de2" name="Changes" comment="" />
+      <created>1780434745033</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1780434745033</updated>
+    </task>
+    <servers />
+  </component>
+</project>

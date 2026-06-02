@@ -1,0 +1,106 @@
+import { useEffect, useState } from "react";
+import { Button, Table } from "react-bootstrap";
+import Form from "react-bootstrap/Form";
+import DeliveryTable from "./DeliveryTable";
+
+const BASE_URL = "http://localhost:8090";
+
+const DeliveryPage = () => {
+  const [customer, setCustomer] = useState(null);
+  const [deliveries, setDeliveries] = useState([]);
+  const [customers, setCustomers] = useState([]);
+
+  const [error, setError] = useState("");
+
+  useEffect(() => {
+    getDeliveries();
+    getCustomers();
+  }, []);
+
+  const getDeliveries = async () => {
+    const response = await fetch(`${BASE_URL}/api/deliveries`);
+    const deliveryCollection = await response.json();
+    setDeliveries(deliveryCollection);
+    console.log(deliveryCollection);
+  };
+
+  const getCustomers = async () => {
+    const response = await fetch(`${BASE_URL}/api/customers`);
+    const customerCollection = await response.json();
+    setCustomers(customerCollection);
+    console.log(customerCollection);
+  };
+
+  const onCustomerSelected = (customerId) => {
+    console.log(customerId);
+    setCustomer(customerId);
+  };
+
+  const onDeliveryCreate = async (event) => {
+    event.preventDefault();
+    console.log("State Customer: " + customer);
+
+    if (!customer) {
+      setError("Please select a customer before creating a delivery.");
+      return;
+    }
+
+    setError("");
+
+    const DELIVERY_API_CREATE_URL = `${BASE_URL}/api/deliveries/customer/${customer}`;
+
+
+    const response = await fetch(DELIVERY_API_CREATE_URL, {
+      method: "POST",
+    });
+
+    console.log(response);
+
+    const delivery = await response.json();
+
+    console.log(delivery);
+    getDeliveries();
+  };
+
+  return (
+    <div style={{ width: "50%", margin: "auto" }}>
+      <h1>Delivery Page</h1>
+      <Form onSubmit={onDeliveryCreate}>
+        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+          <Form.Label>Customer</Form.Label>
+          <Form.Select
+            aria-label="Default select example"
+            value={customer}
+            onChange={(event) => onCustomerSelected(event.target.value)}
+          >
+            <option value="">Select customer...</option>
+            {customers.map((customer) => {
+              return (
+                <option value={customer.id}>
+                  {customer.firstName} {customer.lastName}
+                </option>
+              );
+            })}
+          </Form.Select>
+
+
+          {error && (
+            <Form.Text style={{ color: "red" }}>
+              {error}
+            </Form.Text>
+          )}
+        </Form.Group>
+
+        <Button variant="primary" type="submit">
+          Create Delivery
+        </Button>
+      </Form>
+
+      <div style={{ marginTop: 50 }}>
+        <DeliveryTable deliveries={deliveries} />
+      </div>
+    </div>
+  );
+};
+
+export default DeliveryPage;
